@@ -1,0 +1,217 @@
+/************************
+GENERAL******************/
+
+* {
+  box-sizing: border-box;
+  line-height: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: #9FC490;
+}
+
+a:hover {
+  color: #07393c;
+}
+
+header {
+  font-family: 'Hind', sans-serif;
+  height: 400px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  text-align: center;
+  max-width: 100%;
+  background: linear-gradient(0deg, #fff, transparent 95%), url('../img/mpls.jpg') no-repeat center;
+  background-size: cover;
+}
+
+#intro h2 {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #26363F;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  background: #78A1BB;
+  padding: 10px 0;
+  color: white;
+  font-size: .75em;
+}
+
+.wrap {
+  min-height: 100vh;
+}
+
+/************************
+SIZING******************/
+
+.thumbnail {
+  max-width: 40px;
+  max-height: 30px;
+}
+
+/***************************
+BODY STYLE******************/
+
+header h1 {
+  font-size: 2.5em;
+  margin-top: 125px;
+}
+
+header img {
+  width: 100px;
+  margin-top: 90px;
+}
+
+body {
+  font-family: 'Sintony', sans-serif;
+  color: #26363F;
+}
+
+#intro {
+  text-align: center;
+  /*background-color: #78A1BB;*/
+  color: #26363F;
+  margin: 0 auto;
+  height: 400px;
+  max-width: 100%;
+  padding: 10%;
+  background: linear-gradient(#fff, #78A1BB 30%, transparent 99%)
+  /*background: linear-gradient(0deg, #fff, #78A1BB 10%, transparent 99%)*/
+}
+
+#intro p {
+  margin: auto;
+  padding: 10px;
+}
+
+#primary-content {
+  width: 90%;
+  padding: 0 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.food-drink ul,
+#secondary-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#secondary-content h2 {
+  /*border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;*/
+  padding-top: 10px;
+  width: 100%;
+}
+
+#secondary-content {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+#secondary-content .col2,
+#secondary-content {
+  width: 90%;
+  margin: auto;
+}
+
+h3 {
+  font-family: 'Hind', sans-serif;
+  border-top: 1px solid black;
+  padding-top: 20px;
+  color: #78A1BB;
+  font-size: 1.5em;
+}
+
+.food-drink h3 {
+  border-top: none;
+}
+
+.col {
+  margin-bottom: 20px;
+}
+
+.expectation ul {
+  text-align: left;
+  padding-left: 0;
+}
+
+#secondary-content span::after {
+  content: "";
+  padding: 5px;
+}
+
+/******************************
+MEDIA QUERIES******************/
+
+@media (min-width: 1025px) {
+  header h1 {
+    font-size: 4em;
+    margin-top: 100px;
+    text-shadow: 1px 1px 1px white;
+  }
+
+  #primary-content {
+    max-width: 80%;
+    text-align: center;
+    clear: both;
+  }
+
+  .col {
+    float: left;
+    width: 50%;
+    padding: 0 40px;
+  }
+
+  #intro p {
+    max-width: 80%;
+    padding-top: 5px;
+    font-size: 1.2em;
+  }
+
+  #intro {
+    padding-top: 20px;
+    padding-bottom: 5px;
+  }
+
+  h3 {
+    border-top: none;
+  }
+
+  .outdoors,
+  .expectation {
+    border-top: 1px solid black;
+  }
+
+  #secondary-content {
+    clear: both;
+  }
+
+  #secondary-content h2 {
+    margin-top: 0;
+  }
+
+  #secondary-content .col2 {
+    width: 33.3%;
+    height: 300px;
+    margin: 0 auto;
+    float: left;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  footer {
+    clear: both;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+}
